@@ -41,7 +41,7 @@
 #include <linux/slab.h>
 
 #include <asm/byteorder.h>
-
+#include <mach/smem_log.h>
 #include <mach/msm_smd.h>
 #include "smd_rpcrouter.h"
 
