@@ -764,7 +764,6 @@ static void msm_marimba_shutdown_power(void)
 };
 
 
-/* We won't use marinba FM.
 static int fm_radio_setup(struct marimba_fm_platform_data *pdata)
 {
 	int rc;
@@ -853,13 +852,12 @@ static struct marimba_fm_platform_data marimba_fm_pdata = {
 	.vreg_s2 = NULL,
 	.vreg_xo_out = NULL,
 };
-*/
 
 /* Slave id address for FM/CDC/QMEMBIST
  * Values can be programmed using Marimba slave id 0
  * should there be a conflict with other I2C devices
  * */
-/*#define MARIMBA_SLAVE_ID_FM_ADDR	0x2A*/
+#define MARIMBA_SLAVE_ID_FM_ADDR	0x2A
 #define MARIMBA_SLAVE_ID_CDC_ADDR	0x77
 #define MARIMBA_SLAVE_ID_QMEMBIST_ADDR	0X66
 
